@@ -113,7 +113,7 @@ const mostrarMensagem = () => {
 
    if(mensagem != "") {
       console.log(mensagem)
-      console.log("")//pula a linha
+      console.log("")//pula a linha no terminal
       mensagem = ""
    }
 }
