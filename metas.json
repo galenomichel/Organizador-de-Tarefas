@@ -1,6 +1,14 @@
 [
   {
     "value": "Andar",
+    "checked": true
+  },
+  {
+    "value": "Estudar 1h por dia",
+    "checked": true
+  },
+  {
+    "value": "Fazer 1h de atividade física",
     "checked": false
   }
 ]
