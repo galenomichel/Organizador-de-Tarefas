@@ -9,9 +9,14 @@ const carregarMetas = async () => {
    try {
       const dados = await fs.readFile("metas.json", "utf-8")
       metas = JSON.parse(dados)
-   } catch (error) {
+   } 
+   catch (erro) { 
       metas = []
    }
+}
+
+const salvarMetas = async () => {
+   await fs.writeFile("metas.json", JSON.stringify(metas, null, 2))
 }
 
 const cadastrarMeta = async () => {
@@ -124,10 +129,11 @@ const mostrarMensagem = () => {
 }
 
 const start = async () => {
-   carregarMetas()
+   await carregarMetas()
    
    while(true){
       mostrarMensagem()
+      await salvarMetas()
 
       const opcao = await select({
          message: "Menu >",

@@ -1,6 +1,14 @@
 [
-   {
-      "value": "Tomar 3L de água por dia",
-      "checked": false
-   }
+  {
+    "value": "Tomar 3L de água por dia",
+    "checked": false
+  },
+  {
+    "value": "Andar de bicicleta",
+    "checked": false
+  },
+  {
+    "value": "Ler a Biblia",
+    "checked": false
+  }
 ]
